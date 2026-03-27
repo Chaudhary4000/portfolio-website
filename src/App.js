@@ -52,6 +52,13 @@ const PROJECTS = [
     tech: ["C#", "ASP.NET", "SQL Server", "HTML5", "CSS3"],
     color: "#7c6af7", icon: "✈️",
   },
+  {
+  title: "Leave Portal",
+  link: null,
+  desc: "Designed and developed a Leave Planner System with a full-year calendar view (Jan–Dec) enabling multi-user leave visibility, color-coded date ranges, and an approval workflow. The system provides real-time leave tracking, efficient leave management, and improved planning transparency across the organization.",
+  tech: ["C#", "ASP.NET", "SQL Server", "HTML5", "CSS3"],
+  color: "#7c6af7", icon: "📅",
+},
 ];
 
 const cssText = `
@@ -251,7 +258,7 @@ export default function Portfolio() {
         borderRadius: 8 
       }}
     >
-      Hire Me ✉️
+      Email ✉️
     </a>
 
     {/* WhatsApp Button */}
@@ -323,7 +330,7 @@ export default function Portfolio() {
             <button onClick={() => scrollTo("Contact")} style={{ border: "1.5px solid rgba(255,255,255,0.15)", color: "#94a3b8", padding: "12px 26px", borderRadius: 9, fontWeight: 600, fontSize: 14, background: "transparent", cursor: "pointer" }}>Contact Me</button>
           </div>
           <div style={{ display: "flex", gap: 32, flexWrap: "wrap" }}>
-            {[["1+","Year Exp."],["2","Projects"],["5+","Tech Stacks"],["MCA","@ LPU"]].map(([v,l]) => (
+            {[["1+","Year Exp."],["3","Projects"],["5+","Tech Stacks"],["MCA","@ LPU"]].map(([v,l]) => (
               <div key={l} style={{ display: "flex", flexDirection: "column" }}>
                 <span style={{ fontSize: 28, fontWeight: 900, color: "#00f5c4" }}>{v}</span>
                 <span style={{ fontSize: 11, color: "#4a5568", letterSpacing: 1.2, textTransform: "uppercase" }}>{l}</span>

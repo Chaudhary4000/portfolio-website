@@ -25,6 +25,13 @@ const PROJECTS = [
     tech: ["C#", "ASP.NET", "SQL Server", "HTML5", "CSS3"],
     color: "#7c6af7",
   },
+ {
+  title: "Leave Portal",
+  link: null,
+  desc: "Designed and developed a Leave Planner System with a full-year calendar view (Jan–Dec) enabling multi-user leave visibility, color-coded date ranges, and an approval workflow. The system provides real-time leave tracking, efficient leave management, and improved planning transparency across the organization.",
+  tech: ["C#", "ASP.NET", "SQL Server", "HTML5", "CSS3"],
+  color: "#7c6af7",
+},
 ];
 
 export default function Portfolio() {
