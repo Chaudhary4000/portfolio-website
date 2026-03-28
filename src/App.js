@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import photo from './photo.png';
 
 const NAV_ITEMS = ["About", "Skills", "Experience", "Projects", "Education", "Contact"];
 
@@ -338,22 +339,51 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
+<div className="hero-visual" style={{ flex: "0 0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
+  <div style={{ position: "relative", width: 300, height: 300 }}>
+    
+    {/* Outer spinning ring */}
+    <div style={{ position: "absolute", inset: 0, borderRadius: "50%", border: "1px dashed rgba(0,245,196,0.3)", animation: "spinSlow 20s linear infinite" }} />
+    
+    {/* Inner spinning ring */}
+    <div style={{ position: "absolute", inset: 15, borderRadius: "50%", border: "1px dashed rgba(124,106,247,0.2)", animation: "spinSlow 30s linear infinite reverse" }} />
 
-        <div className="hero-visual" style={{ flex: "0 0 auto", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ position: "relative", width: 300, height: 300 }}>
-            <div style={{ position: "absolute", inset: 0, borderRadius: "50%", border: "1px dashed rgba(0,245,196,0.2)", animation: "spinSlow 20s linear infinite" }} />
-            <div style={{ position: "absolute", inset: 15, borderRadius: "50%", border: "1px dashed rgba(124,106,247,0.15)", animation: "spinSlow 30s linear infinite reverse" }} />
-            <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 120, height: 120, borderRadius: "50%", background: "linear-gradient(135deg,#00f5c4,#7c6af7)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 34, fontWeight: 900, color: "#04080f", boxShadow: "0 0 0 4px rgba(0,245,196,0.15),0 0 50px rgba(0,245,196,0.25)", animation: "float 4s ease-in-out infinite" }}>DC</div>
-            {[
-              { label: "React", color: "#61dafb", top: 8, left: "50%", marginLeft: -28 },
-              { label: "FastAPI", color: "#00f5c4", bottom: 8, left: "50%", marginLeft: -30 },
-              { label: "C#", color: "#9b59b6", top: "50%", left: 4, marginTop: -14 },
-              { label: "MongoDB", color: "#68d391", top: "50%", right: 4, marginTop: -14 },
-            ].map(({ label, color, ...pos }) => (
-              <span key={label} style={{ position: "absolute", ...pos, background: `rgba(${hexToRgb(color)},0.12)`, border: `1px solid ${color}55`, color, borderRadius: 6, padding: "4px 10px", fontSize: 11, fontWeight: 800, whiteSpace: "nowrap" }}>{label}</span>
-            ))}
-          </div>
-        </div>
+    {/* Wrapper 1 - sirf positioning */}
+<div style={{ 
+  position: "absolute", 
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)",
+}}>
+  {/* Wrapper 2 - sirf animation */}
+  <div style={{ 
+    animation: "float 4s ease-in-out infinite",
+  }}>
+    {/* Wrapper 3 - circle + photo */}
+    <div style={{ 
+  width: 250, 
+  height: 250,          // ← 238 se 250 karo - equal hona chahiye
+  borderRadius: "50%", 
+  border: "3px solid #00f5c4",
+  overflow: "hidden",
+  boxShadow: "0 0 0 6px rgba(0,245,196,0.1), 0 0 40px rgba(0,245,196,0.2), 0 0 80px rgba(124,106,247,0.15)", 
+}}>
+  <img 
+    src={photo}
+    alt="Dharmendra Chaudhary"
+    style={{ 
+      width: "107%", 
+      height: "100%",   
+      objectFit: "cover",   
+      objectPosition: "50% 15%",
+      display: "block"
+    }}
+  />
+</div>
+  </div>
+</div>
+  </div>
+</div>
       </section>
 
       {/* SKILLS */}
