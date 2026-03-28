@@ -132,7 +132,7 @@ const cssText = `
   @media(max-width:768px){
     .nav-links{display:none!important}
     .hamburger{display:block!important}
-    .hero-visual{display:none!important}
+   .hero-visual{display:flex!important;justify-content:center!important;width:100%!important;margin-bottom:30px!important}
     .hero-section{padding:60px 6vw!important}
   }
 `;
@@ -308,7 +308,7 @@ export default function Portfolio() {
 
       {/* HERO */}
       <section id="About" className="hero-section" style={{ position: "relative", zIndex: 1, display: "flex", alignItems: "center", justifyContent: "space-between", padding: "90px 10vw", minHeight: "95vh", gap: 40, flexWrap: "wrap" }}>
-        <div className="hero-anim" style={{ flex: 1, minWidth: 280, maxWidth: 580 }}>
+                <div className="hero-anim" style={{ flex: 1, minWidth: 280, maxWidth: 580 }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(0,245,196,0.07)", border: "1px solid rgba(0,245,196,0.2)", borderRadius: 100, padding: "6px 16px", marginBottom: 24 }}>
             <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#00f5c4", display: "inline-block", animation: "pulseGlow 2s infinite" }} />
             <span style={{ fontSize: 12, color: "#00f5c4", fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase" }}>Open to Opportunities</span>

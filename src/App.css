@@ -13,6 +13,28 @@
   }
 }
 
+@media(max-width:768px){
+  .nav-links{display:none!important}
+  .hamburger{display:block!important}
+  .hero-section{
+    padding:40px 6vw!important;
+    flex-direction:column!important;
+    align-items:center!important;
+  }
+  .hero-visual{
+    display:flex!important;
+    justify-content:center!important;
+    width:100%!important;
+    margin-bottom:24px!important;
+    order:-1!important;
+  }
+  .hero-visual > div{
+    width:200px!important;
+    height:200px!important;
+  }
+
+}  /* ← yeh } add kiya */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,10 +51,6 @@
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
