@@ -503,7 +503,7 @@ export default function Portfolio() {
             fontWeight: 700
           }}
         >
-          May 2026 – Present
+          June 2026 – Present
         </span>
       </div>
 
@@ -654,7 +654,7 @@ export default function Portfolio() {
               fontWeight: 700
             }}
           >
-            Oct 2024 – May 2026
+            Oct 2024 – June 2026
           </span>
         </div>
 
