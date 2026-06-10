@@ -418,33 +418,322 @@ export default function Portfolio() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="Experience" style={{ position: "relative", zIndex: 1, padding: "80px 10vw", borderTop: "1px solid rgba(255,255,255,0.04)" }}>
-        <SectionTitle>Work Experience</SectionTitle>
-        <div style={{ borderLeft: "2px solid rgba(0,245,196,0.25)", paddingLeft: 32, marginLeft: 10, position: "relative" }}>
-          <div style={{ position: "absolute", left: -8, top: 10, width: 14, height: 14, borderRadius: "50%", background: "#00f5c4", boxShadow: "0 0 16px #00f5c4" }} />
-          <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 16, padding: "30px 32px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 12, marginBottom: 20 }}>
-              <div>
-                <div style={{ fontSize: 20, fontWeight: 900, color: "#f1f5f9", marginBottom: 4 }}>Software Developer</div>
-                <div style={{ fontSize: 14, color: "#7c6af7", fontWeight: 700 }}>4CPLUS (INTERNET) Ltd — Ghaziabad</div>
-              </div>
-              <span style={{ fontSize: 12, color: "#64748b", background: "rgba(124,106,247,0.1)", border: "1px solid rgba(124,106,247,0.2)", borderRadius: 6, padding: "5px 14px", alignSelf: "flex-start", fontWeight: 700 }}>Oct 2024 – May 2026</span>
-            </div>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
-              {["Built full-stack modules: auth systems, real-time status tracking & user dashboards","Integrated REST APIs for improved functionality and real-time data processing","Optimized application performance with clean, maintainable code","Collaborated across frontend & backend teams to ship production features on time"].map((p,i) => (
-                <li key={i} style={{ fontSize: 14, color: "#94a3b8", lineHeight: 1.75, display: "flex", alignItems: "flex-start", gap: 10 }}>
-                  <span style={{ color: "#00f5c4", marginTop: 2, flexShrink: 0 }}>▸</span>{p}
-                </li>
-              ))}
-            </ul>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-              {["C#","ASP.NET","JavaScript","SQL Server","REST API"].map(t => (
-                <span key={t} style={{ fontSize: 11, fontWeight: 700, background: "rgba(0,245,196,0.07)", border: "1px solid rgba(0,245,196,0.2)", color: "#00f5c4", borderRadius: 5, padding: "3px 10px" }}>{t}</span>
-              ))}
-            </div>
+    <section
+  id="Experience"
+  style={{
+    position: "relative",
+    zIndex: 1,
+    padding: "80px 10vw",
+    borderTop: "1px solid rgba(255,255,255,0.04)"
+  }}
+>
+  <SectionTitle>Work Experience</SectionTitle>
+
+  <div
+    style={{
+      borderLeft: "2px solid rgba(0,245,196,0.25)",
+      paddingLeft: 32,
+      marginLeft: 10,
+      position: "relative"
+    }}
+  >
+    {/* Current Experience - Digitalis Technologies */}
+    <div
+      style={{
+        position: "absolute",
+        left: -8,
+        top: 10,
+        width: 14,
+        height: 14,
+        borderRadius: "50%",
+        background: "#00f5c4",
+        boxShadow: "0 0 16px #00f5c4"
+      }}
+    />
+
+    <div
+      style={{
+        background: "rgba(255,255,255,0.03)",
+        border: "1px solid rgba(255,255,255,0.07)",
+        borderRadius: 16,
+        padding: "30px 32px",
+        marginBottom: 30
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+          gap: 12,
+          marginBottom: 20
+        }}
+      >
+        <div>
+          <div
+            style={{
+              fontSize: 20,
+              fontWeight: 900,
+              color: "#f1f5f9",
+              marginBottom: 4
+            }}
+          >
+            Software Developer
+          </div>
+          <div
+            style={{
+              fontSize: 14,
+              color: "#7c6af7",
+              fontWeight: 700
+            }}
+          >
+            Digitalis Technologies
           </div>
         </div>
-      </section>
+
+        <span
+          style={{
+            fontSize: 12,
+            color: "#64748b",
+            background: "rgba(124,106,247,0.1)",
+            border: "1px solid rgba(124,106,247,0.2)",
+            borderRadius: 6,
+            padding: "5px 14px",
+            alignSelf: "flex-start",
+            fontWeight: 700
+          }}
+        >
+          May 2026 – Present
+        </span>
+      </div>
+
+      <ul
+        style={{
+          listStyle: "none",
+          display: "flex",
+          flexDirection: "column",
+          gap: 10,
+          marginBottom: 20,
+          padding: 0
+        }}
+      >
+        {[
+          "Developing and customizing ERPNext applications using the Frappe Framework",
+          "Creating custom DocTypes, Reports, Dashboards and Workflows",
+          "Working with Python, JavaScript and MariaDB for backend and database development",
+          "Integrating third-party APIs and automating business processes",
+          "Maintaining and optimizing ERP modules for better performance and scalability"
+        ].map((p, i) => (
+          <li
+            key={i}
+            style={{
+              fontSize: 14,
+              color: "#94a3b8",
+              lineHeight: 1.75,
+              display: "flex",
+              alignItems: "flex-start",
+              gap: 10
+            }}
+          >
+            <span
+              style={{
+                color: "#00f5c4",
+                marginTop: 2,
+                flexShrink: 0
+              }}
+            >
+              ▸
+            </span>
+            {p}
+          </li>
+        ))}
+      </ul>
+
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 8
+        }}
+      >
+        {[
+          "ERPNext",
+          "Frappe",
+          "Python",
+          "JavaScript",
+          "MariaDB",
+          "REST API"
+        ].map((t) => (
+          <span
+            key={t}
+            style={{
+              fontSize: 11,
+              fontWeight: 700,
+              background: "rgba(0,245,196,0.07)",
+              border: "1px solid rgba(0,245,196,0.2)",
+              color: "#00f5c4",
+              borderRadius: 5,
+              padding: "3px 10px"
+            }}
+          >
+            {t}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* Previous Experience - 4CPLUS */}
+    <div
+      style={{
+        position: "relative",
+        marginTop: 20
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          left: -40,
+          top: 10,
+          width: 14,
+          height: 14,
+          borderRadius: "50%",
+          background: "#7c6af7",
+          boxShadow: "0 0 16px #7c6af7"
+        }}
+      />
+
+      <div
+        style={{
+          background: "rgba(255,255,255,0.03)",
+          border: "1px solid rgba(255,255,255,0.07)",
+          borderRadius: 16,
+          padding: "30px 32px"
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 12,
+            marginBottom: 20
+          }}
+        >
+          <div>
+            <div
+              style={{
+                fontSize: 20,
+                fontWeight: 900,
+                color: "#f1f5f9",
+                marginBottom: 4
+              }}
+            >
+              Software Developer
+            </div>
+
+            <div
+              style={{
+                fontSize: 14,
+                color: "#7c6af7",
+                fontWeight: 700
+              }}
+            >
+              4CPLUS (INTERNET) Ltd — Ghaziabad
+            </div>
+          </div>
+
+          <span
+            style={{
+              fontSize: 12,
+              color: "#64748b",
+              background: "rgba(124,106,247,0.1)",
+              border: "1px solid rgba(124,106,247,0.2)",
+              borderRadius: 6,
+              padding: "5px 14px",
+              alignSelf: "flex-start",
+              fontWeight: 700
+            }}
+          >
+            Oct 2024 – May 2026
+          </span>
+        </div>
+
+        <ul
+          style={{
+            listStyle: "none",
+            display: "flex",
+            flexDirection: "column",
+            gap: 10,
+            marginBottom: 20,
+            padding: 0
+          }}
+        >
+          {[
+            "Built full-stack modules including authentication systems and user dashboards",
+            "Integrated REST APIs for real-time data processing and enhanced functionality",
+            "Developed database-driven applications using ASP.NET, C# and SQL Server",
+            "Optimized application performance with clean and maintainable code",
+            "Collaborated with frontend and backend teams to deliver production-ready features"
+          ].map((p, i) => (
+            <li
+              key={i}
+              style={{
+                fontSize: 14,
+                color: "#94a3b8",
+                lineHeight: 1.75,
+                display: "flex",
+                alignItems: "flex-start",
+                gap: 10
+              }}
+            >
+              <span
+                style={{
+                  color: "#00f5c4",
+                  marginTop: 2,
+                  flexShrink: 0
+                }}
+              >
+                ▸
+              </span>
+              {p}
+            </li>
+          ))}
+        </ul>
+
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 8
+          }}
+        >
+          {[
+            "C#",
+            "ASP.NET",
+            "JavaScript",
+            "SQL Server",
+            "REST API"
+          ].map((t) => (
+            <span
+              key={t}
+              style={{
+                fontSize: 11,
+                fontWeight: 700,
+                background: "rgba(0,245,196,0.07)",
+                border: "1px solid rgba(0,245,196,0.2)",
+                color: "#00f5c4",
+                borderRadius: 5,
+                padding: "3px 10px"
+              }}
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* PROJECTS */}
       <section id="Projects" style={{ position: "relative", zIndex: 1, padding: "80px 10vw", borderTop: "1px solid rgba(255,255,255,0.04)" }}>
