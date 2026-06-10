@@ -428,7 +428,7 @@ export default function Portfolio() {
                 <div style={{ fontSize: 20, fontWeight: 900, color: "#f1f5f9", marginBottom: 4 }}>Software Developer</div>
                 <div style={{ fontSize: 14, color: "#7c6af7", fontWeight: 700 }}>4CPLUS (INTERNET) Ltd — Ghaziabad</div>
               </div>
-              <span style={{ fontSize: 12, color: "#64748b", background: "rgba(124,106,247,0.1)", border: "1px solid rgba(124,106,247,0.2)", borderRadius: 6, padding: "5px 14px", alignSelf: "flex-start", fontWeight: 700 }}>Oct 2024 – Present</span>
+              <span style={{ fontSize: 12, color: "#64748b", background: "rgba(124,106,247,0.1)", border: "1px solid rgba(124,106,247,0.2)", borderRadius: 6, padding: "5px 14px", alignSelf: "flex-start", fontWeight: 700 }}>Oct 2024 – May 2026</span>
             </div>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
               {["Built full-stack modules: auth systems, real-time status tracking & user dashboards","Integrated REST APIs for improved functionality and real-time data processing","Optimized application performance with clean, maintainable code","Collaborated across frontend & backend teams to ship production features on time"].map((p,i) => (
@@ -492,6 +492,7 @@ export default function Portfolio() {
           <span style={{ color: "#e2e8f0", fontSize: 14 }}>Certificate of Appreciation — Workshop on <b style={{ color: "#f6ad55" }}>Web Development Technologies</b></span>
         </div>
       </section>
+
 
       {/* CONTACT */}
       <section id="Contact" style={{ position: "relative", zIndex: 1, padding: "80px 10vw", borderTop: "1px solid rgba(255,255,255,0.04)" }}>
