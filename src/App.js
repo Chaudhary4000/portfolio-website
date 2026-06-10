@@ -501,7 +501,7 @@ export default function Portfolio() {
             { icon: "📧", label: "Email", val: "Dharmendrachaudhary4000@gmail.com", href: "mailto:Dharmendrachaudhary4000@gmail.com" },
             { icon: "📞", label: "Phone", val: "+91 8171601828", href: "tel:+918171601828" },
             { icon: "💼", label: "LinkedIn", val: "linkedin.com/in/dharmendra4000", href: "https://linkedin.com/in/dharmendra4000" },
-            { icon: "💻", label: "GitHub", val: "github.com/dharmendra4000", href: "https://github.com/Chaudhary4000" },
+            { icon: "💻", label: "GitHub", val: "github.com/dharmendra4000", href: "https://github.com/dharmendra4000" },
           ].map(c => (
             <a key={c.label} href={c.href} target="_blank" className="contact-card" style={{ display: "flex", alignItems: "center", gap: 16, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 14, padding: "20px 22px", textDecoration: "none" }}>
               <span style={{ fontSize: 28 }}>{c.icon}</span>
