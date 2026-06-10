@@ -487,7 +487,7 @@ export default function Portfolio() {
               fontWeight: 700
             }}
           >
-            Digitalis Technologies
+            Digitalis Technologies — Delhi
           </div>
         </div>
 
